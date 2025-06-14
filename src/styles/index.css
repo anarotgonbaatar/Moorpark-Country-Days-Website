@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Playwrite+AU+SA:wght@100..400&display=swap');
 
 * {
 	box-sizing: border-box;
@@ -11,8 +12,6 @@
 }
 
 :root {
-	font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-
 	/* Colors */
 	--green: #2E6F40;
 	--green-dark: #014222;
@@ -30,6 +29,7 @@
 }
 
 body {
+	font: inherit;
 	place-items: center;
 	background-color: var(--green);
 	min-width: 320px;

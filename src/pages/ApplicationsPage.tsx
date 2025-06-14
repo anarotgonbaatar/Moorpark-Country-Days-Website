@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import {useState} from "react"
 import ParadeContent from '../sections/applications/Parade'
 import SponsorshipContent from '../sections/applications/Sponsorship'
 import VendorContent from '../sections/applications/Vendor'
@@ -10,7 +10,6 @@ const appTypes = ['Sponsorship', 'Volunteer', 'Parade', 'Vendor']
 
 export default function ApplicationsPage() {
 	const [activeTab, setActiveTab] = useState<string>('Sponsorship')
-	const [descExpanded, setDescExpanded] = useState<boolean>(true)
 
 	const displayActiveContent = () => {
 		switch (activeTab) {
