@@ -1,4 +1,31 @@
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/anar@moorparkcountrydays.com/public_html/
-    - /bin/cp -R build/* $DEPLOYPATH
+    # 0) set paths
+    - export DEPLOYPATH=/home/hrqmvtmr05li/public_html/moorparkcountrydays.com/
+    - export REPOPATH=$PWD
+
+    # 1) install deps (uses the Node available on the server)
+    - npm ci --omit=dev || npm ci
+
+    # 2) build (Vite => dist/, CRA => build/)
+    - npm run build
+
+    # 3) figure out the output dir
+    - if [ -d "$REPOPATH/dist" ]; then OUTDIR="$REPOPATH/dist"; else OUTDIR="$REPOPATH/build"; fi
+
+    # 4) deploy: clear old files except .well-known/ & cgi-bin/
+    - find "$DEPLOYPATH" -mindepth 1 -maxdepth 1 ! -name '.well-known' ! -name 'cgi-bin' -exec rm -rf {} +
+
+    # 5) copy new build
+    - /bin/cp -R "$OUTDIR"/* "$DEPLOYPATH"
+
+    # 6) SPA routing (optional; keep if it’s React/Vite SPA)
+    - if [ ! -f "$DEPLOYPATH/.htaccess" ]; then cat > "$DEPLOYPATH/.htaccess" <<'EOF'
+      Options -MultiViews
+      RewriteEngine On
+      RewriteBase /
+      RewriteCond %{REQUEST_FILENAME} !-f
+      RewriteCond %{REQUEST_FILENAME} !-d
+      RewriteRule . /index.html [L]
+      EOF
+      fi
