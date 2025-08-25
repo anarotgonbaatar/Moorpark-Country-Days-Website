@@ -15,13 +15,13 @@ export default function Hero() {
 
 				<div className="flex gap-[1rem] mt-[2rem]">
 					<a
-						href="/applications"
+						href="/#applications-section"
 						className="btn cta-btn"
 					>
 						Apply Now
 					</a>
 					<a
-						href="#contact"
+						href="/#contact-section"
 						className="btn"
 					>
 						Contact Us
