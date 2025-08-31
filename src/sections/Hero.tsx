@@ -1,4 +1,5 @@
 import Logo from '../assets/logos/Moorpark Country Days.jpg'
+import { FaFacebook, FaInstagram } from 'react-icons/fa'
 
 export default function Hero() {
 	return (
@@ -25,6 +26,15 @@ export default function Hero() {
 						className="btn"
 					>
 						Contact Us
+					</a>
+				</div>
+
+				<div className='flex gap-[1rem] justify-center items-center mt-[1rem]'>
+					<a href="https://www.facebook.com/MoorparkCountryDays">
+						<FaFacebook className='h-[2rem] w-[2rem] fill-[white]'/>
+					</a>
+					<a href="https://www.instagram.com/moorparkcountrydays">
+						<FaInstagram className='h-[2rem] w-[2rem] fill-[white]'/>
 					</a>
 				</div>
 

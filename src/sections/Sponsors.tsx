@@ -34,10 +34,10 @@ export default function Sponsors() {
 	}, [])
 
 	return (
-		<div className="text-[white]">
+		<section className="text-[white] flex flex-col gap-[2rem]">
 			{/* Platinum Sponsors */}
 			{platinum.length > 0 && (
-				<section>
+				<div>
 					<h2 className="">Platinum Sponsors</h2>
 					<div className="flex gap-[1rem]">
 						{platinum.map((s) => (
@@ -50,29 +50,29 @@ export default function Sponsors() {
 							</a>
 						))}
 					</div>
-				</section>
+				</div>
 			)}
 
 			{/* Gold Sponsors */}
 			{gold.length > 0 && (
-				<section>
-					<h2 className="">Gold Sponsors</h2>
+				<div>
+					<h2 className="text-[var(--gold)]">Gold Sponsors</h2>
 					<div className="flex gap-[1rem] overflow-x-auto">
 						{gold.map((s) => (
 							<img
 								src={s.logo_url || '/placeholder.png'}
 								alt={s.sponsor_name}
-								className="h-[6rem] border-2 border-[var(--gold)] object-contain"
+								className="h-[6.5rem] border-2 border-[var(--gold)] object-contain"
 							/>
 						))}
 					</div>
-				</section>
+				</div>
 			)}
 
 			{/* Silver & Bronze just listed */}
 			{others.length > 0 && (
-				<div className='flex flex-col items-center mb-[5rem]'>
-					<h2>Other Sponsors</h2>
+				<div className='flex flex-col items-center'>
+					<h2>Silver Sponsors</h2>
 					<ul className="list-disc list-inside">
 						{others.map((s) => (
 							<li key={s.id} className='text-[var(--white)] text-[1.25rem]'>
@@ -88,6 +88,6 @@ export default function Sponsors() {
 					</ul>
 				</div>
 			)}
-		</div>
+		</section>
 	)
 }

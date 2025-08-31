@@ -1,4 +1,4 @@
-import { FaFacebook } from 'react-icons/fa'
+import { FaFacebook, FaInstagram } from 'react-icons/fa'
 
 export default function About() {
 	return (
@@ -14,7 +14,7 @@ export default function About() {
 				</a>
 			</div>
 
-			<p>
+			{/* <p>
 				Or send us a message below:
 			</p>
 
@@ -43,11 +43,14 @@ export default function About() {
 				>
 					Send Message
 				</button>
-			</form>
+			</form> */}
 
-			<div className=''>
+			<div className='flex gap-[1rem] justify-center items-center'>
 				<a href="https://www.facebook.com/MoorparkCountryDays">
 					<FaFacebook className='h-[2rem] w-[2rem] fill-[var(--green)]'/>
+				</a>
+				<a href="https://www.instagram.com/moorparkcountrydays">
+					<FaInstagram className='h-[2rem] w-[2rem] fill-[var(--green)]'/>
 				</a>
 			</div>
 
