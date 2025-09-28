@@ -35,16 +35,16 @@ export default function Sponsors() {
 
 	const goldSponsors = [
 		{
-			sponsor_name: '',
-			logo_url: 'src/assets/logos/Gold Sponsors/adventist-health.jpg',
+			sponsor_name: 'Adventist Health',
+			logo_url: 'public/Gold Sponsors/adventist-health.jpg',
 		},
 		{
-			sponsor_name: '',
-			logo_url: 'src/assets/logos/Gold Sponsors/clean-concepts.jpg',
+			sponsor_name: 'Clean Concepts',
+			logo_url: 'public/Gold Sponsors/clean-concepts.jpg',
 		},
 		{
-			sponsor_name: '',
-			logo_url: 'src/assets/logos/Gold Sponsors/karate-krav-maga.jpg',
+			sponsor_name: 'MoorPark Karate Krav Maga',
+			logo_url: 'public/Gold Sponsors/karate-krav-maga.jpg',
 		},
 	]
 	const silverSponsors = [
