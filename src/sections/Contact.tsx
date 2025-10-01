@@ -14,37 +14,6 @@ export default function About() {
 				</a>
 			</div>
 
-			{/* <p>
-				Or send us a message below:
-			</p>
-
-			<form>
-				<input
-					type="text"
-					placeholder="Your Name"
-					required
-					className=""
-				/>
-				<input
-					type="email"
-					placeholder="Your Email"
-					required
-					className=""
-				/>
-				<textarea
-					placeholder="Your Message"
-					required
-					className=""
-				>
-				</textarea>
-				<button
-					type="submit"
-					className="btn"
-				>
-					Send Message
-				</button>
-			</form> */}
-
 			<div className='flex gap-[1rem] justify-center items-center'>
 				<a href="https://www.facebook.com/MoorparkCountryDays">
 					<FaFacebook className='h-[2rem] w-[2rem] fill-[var(--green)]'/>
@@ -56,6 +25,17 @@ export default function About() {
 
 			{/* Location and Direction */}
 			<p>Find us at: High Street, Moorpark, CA, United States</p>
+
+			<div className='bg-[#F7B500] p-[1rem]'>
+				<p className='text-[1.5rem] mb-[1rem]'>Important: Road Closures</p>
+				<ul className='text-left text-[black]'>
+					<li className='text-[black]'>Residents Exiting or Entering Wicks Road will not be allowed during the hours of 8AM - 12PM on Oct 4th</li>
+					<li className='text-[black]'>Residents Exiting or Entering Casey Rd will not be allowed during the hours of 8Am - 12PM</li>
+					<li className='text-[black]'>Charles Street to Moorpark Ave will be closed 8AM - 12PM</li>
+					<li className='text-[black]'>Everett Street to Moorpark Ave will be closed 8AM - 12PM</li>
+					<li className='text-[black]'>High St will be closed from 7AM-5 PM on Oct 4th</li>
+				</ul>
+			</div>
 
 			<div className="flex w-[100%] justify-center items-center">
 				<iframe

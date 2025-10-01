@@ -32,6 +32,16 @@ export default function Sponsors() {
 	// 	}
 	// 	loadSponsors()
 	// }, [])
+	const diamondSponsors = [
+		{
+			sponsor_name: '100 GROUP',
+			logo_url: '/diamond-sponsors/100-group.jpg',
+		},
+		{
+			sponsor_name: 'HIGH STREET DEPOT',
+			logo_url: '/diamond-sponsors/high-street-depot.jpg',
+		},
+	]
 
 	const goldSponsors = [
 		{
@@ -45,6 +55,10 @@ export default function Sponsors() {
 		{
 			sponsor_name: 'MoorPark Karate Krav Maga',
 			logo_url: '/gold-sponsors/karate-krav-maga.jpg',
+		},
+		{
+			sponsor_name: 'IvyTech Charter School',
+			logo_url: '/gold-sponsors/ivytech.jpg',
 		},
 	]
 	const silverSponsors = [
@@ -60,23 +74,22 @@ export default function Sponsors() {
 
 	return (
 		<section className="text-[white] flex flex-col gap-[2rem]">
-			{/* Platinum Sponsors
-			{platinum.length > 0 && (
+			{/* Diamond Sponsors */}
+			{diamondSponsors.length > 0 && (
 				<div>
-					<h2 className="">Platinum Sponsors</h2>
-					<div className="flex gap-[1rem]">
-						{platinum.map((s) => (
-							<a key={s.id} href={s.website || '#'} target="_blank" rel="noreferrer">
-								<img
-									src={s.logo_url || '/placeholder.png'}
-									alt={s.sponsor_name}
-									className="h-24 object-contain"
-								/>
-							</a>
+					<h2 className="text-[var(--gold)]">Diamond Sponsors</h2>
+					<div className="flex gap-[1rem] overflow-x-auto">
+						{diamondSponsors.map((s, idx) => (
+							<img
+								key={idx}
+								src={s.logo_url || '/placeholder.png'}
+								alt={s.sponsor_name}
+								className="h-[6.5rem] border-2 border-[var(--gold)] object-contain"
+							/>
 						))}
 					</div>
 				</div>
-			)} */}
+			)}
 
 			{/* Gold Sponsors */}
 			{goldSponsors.length > 0 && (
