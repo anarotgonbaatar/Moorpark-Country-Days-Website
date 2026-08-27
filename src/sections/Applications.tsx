@@ -14,37 +14,45 @@ export default function About() {
 
 			{/* Tabs/Types */}
 			<div className="flex gap-[1rem] flex-wrap justify-center">
-				<a 
-					href="https://docs.google.com/forms/d/e/1FAIpQLSfQNuG_B-bx6QdesfGksCxDVPYzGN6Nz3VWZa8dS7RiANCJ6A/viewform"
+				<a
+					href="https://docs.google.com/forms/d/e/1FAIpQLSdIOIOxlMwPLCmzLuBeHxg6wDZwsWW0M1X8t_oeyq6siEElNg/viewform?usp=header"
 					className="btn gap-[0.5rem]"
 					target="_blank"
 					rel="noopener"
 				>
-					Sponsorship <FaLink/>
+					Sponsorship <FaLink />
 				</a>
 				<a
-					href="https://docs.google.com/forms/d/e/1FAIpQLSdiIl-y4uMAwgQhOKN1zLts4CDCCkEz8UOMc2NdmuxWTrYztw/viewform"
+					href="https://docs.google.com/forms/d/e/1FAIpQLSdiIl-y4uMAwgQhOKN1zLts4CDCCkEz8UOMc2NdmuxWTrYztw/viewform?usp=sf_link"
 					className="btn gap-[0.5rem]"
 					target="_blank"
 					rel="noopener"
 				>
-					Volunteer <FaLink/>
+					Volunteer <FaLink />
 				</a>
 				<a
-					href="https://docs.google.com/forms/d/e/1FAIpQLSeEigWW-hkfwlaX3aeue2xvXJsjGggr53byIfDlbS7mUxufnw/viewform"
+					href="https://docs.google.com/forms/d/e/1FAIpQLScrEHR6KJs6FMqqOLrGD2G4BAem_9WDiLs_sq3yI4FtALv3Hw/viewform?usp=header"
 					className="btn gap-[0.5rem]"
 					target="_blank"
 					rel="noopener"
 				>
-					Parade <FaLink/>
+					Parade <FaLink />
 				</a>
 				<a
-					href="https://docs.google.com/forms/d/e/1FAIpQLSceQYHpIqLfqOP7ffTxqM8Y-HB6H_qmun2QiMlDWKmik7pWHA/viewform"
+					href="https://docs.google.com/forms/d/e/1FAIpQLScecfDELMWOPilib3SIC1pbX7moUeO8Yg8jOD_nAf05qkNCig/viewform?usp=header"
 					className="btn gap-[0.5rem]"
 					target="_blank"
 					rel="noopener"
 				>
-					Vendor <FaLink/>
+					Vendor <FaLink />
+				</a>
+				<a
+					href="https://square.link/u/kiFnD00b?src=sheet"
+					className="btn gap-[0.5rem]"
+					target="_blank"
+					rel="noopener"
+				>
+					Donate to Moorpark Country Days <FaLink />
 				</a>
 			</div>
 		</section>

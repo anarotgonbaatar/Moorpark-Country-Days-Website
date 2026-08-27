@@ -16,10 +16,10 @@ export default function About() {
 
 			<div className='flex gap-[1rem] justify-center items-center'>
 				<a href="https://www.facebook.com/MoorparkCountryDays">
-					<FaFacebook className='h-[2rem] w-[2rem] fill-[var(--green)]'/>
+					<FaFacebook className='h-[2rem] w-[2rem] fill-[var(--green)]' />
 				</a>
 				<a href="https://www.instagram.com/moorparkcountrydays">
-					<FaInstagram className='h-[2rem] w-[2rem] fill-[var(--green)]'/>
+					<FaInstagram className='h-[2rem] w-[2rem] fill-[var(--green)]' />
 				</a>
 			</div>
 
@@ -29,23 +29,25 @@ export default function About() {
 			<div className='bg-[#F7B500] p-[1rem]'>
 				<p className='text-[1.5rem] mb-[1rem]'>Important: Road Closures</p>
 				<ul className='text-left text-[black]'>
-					<li className='text-[black]'>Residents Exiting or Entering Wicks Road will not be allowed during the hours of 8AM - 12PM on Oct 4th</li>
-					<li className='text-[black]'>Residents Exiting or Entering Casey Rd will not be allowed during the hours of 8Am - 12PM</li>
-					<li className='text-[black]'>Charles Street to Moorpark Ave will be closed 8AM - 12PM</li>
-					<li className='text-[black]'>Everett Street to Moorpark Ave will be closed 8AM - 12PM</li>
-					<li className='text-[black]'>High St will be closed from 7AM-5 PM on Oct 4th</li>
+					<li className='text-[black]'>Residents Exiting or Entering Wicks Road will not be allowed during the hours of 7:30AM - 12PM on Oct 3th</li>
+					<li className='text-[black]'>Residents Exiting or Entering Casey Rd will not be allowed during the hours of 7:30AM - 12PM on Oct 3th</li>
+					<li className='text-[black]'>Charles Street to Moorpark Ave will be closed 7:30AM - 12PM on Oct 3th</li>
+					<li className='text-[black]'>Everett Street to Moorpark Ave will be closed 7:30AM - 12PM on Oct 3th</li>
+					<li className='text-[black]'>High Street (Hard Closure) will be closed to all traffic from 6 AM - 5 PM on Oct 3th</li>
+					<li className='text-[black]'>Walnut Canyon Road (Spring to Casey) will be open for local resident traffic ONLY from 7AM - 12PM</li>
+					<li className='text-[black]'>Walnut Canyon Road between Casey Road and Poindexter (Hard Closure) will be closed to all traffic from 7AM - 12PM</li>
 				</ul>
 			</div>
 
 			<div className="flex w-[100%] justify-center items-center">
 				<iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.661853142744!2d-118.88272488478234!3d34.28501338053488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80e83bcf4d37d475%3A0x6e3d48e55a2c9cfb!2sHigh%20St%2C%20Moorpark%2C%20CA%2093031%2C%20USA!5e0!3m2!1sen!2sus!4v1717368398043!5m2!1sen!2sus"
-                    loading="lazy"
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.661853142744!2d-118.88272488478234!3d34.28501338053488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80e83bcf4d37d475%3A0x6e3d48e55a2c9cfb!2sHigh%20St%2C%20Moorpark%2C%20CA%2093031%2C%20USA!5e0!3m2!1sen!2sus!4v1717368398043!5m2!1sen!2sus"
+					loading="lazy"
 					title="Google Maps"
-                    allowFullScreen
-                    referrerPolicy="no-referrer-when-downgrade"
+					allowFullScreen
+					referrerPolicy="no-referrer-when-downgrade"
 					className="w-[100%] max-w-[35rem] max-h-[18rem] h-[100%]"
-                ></iframe>
+				></iframe>
 			</div>
 
 		</section>
