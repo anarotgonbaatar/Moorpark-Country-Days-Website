@@ -1,8 +1,8 @@
 import { FaFacebook, FaInstagram } from 'react-icons/fa'
 
-export default function About() {
+export default function Contact() {
 	return (
-		<section id="contact-section" className="bg-[white]">
+		<section id="contact-section">
 			<h2>
 				Contact Us
 			</h2>
@@ -26,16 +26,15 @@ export default function About() {
 			{/* Location and Direction */}
 			<p>Find us at: High Street, Moorpark, CA, United States</p>
 
-			<div className='bg-[#F7B500] p-[1rem]'>
-				<p className='text-[1.5rem] mb-[1rem]'>Important: Road Closures</p>
-				<ul className='text-left text-[black]'>
-					<li className='text-[black]'>Residents Exiting or Entering Wicks Road will not be allowed during the hours of 7:30AM - 12PM on Oct 3th</li>
-					<li className='text-[black]'>Residents Exiting or Entering Casey Rd will not be allowed during the hours of 7:30AM - 12PM on Oct 3th</li>
-					<li className='text-[black]'>Charles Street to Moorpark Ave will be closed 7:30AM - 12PM on Oct 3th</li>
-					<li className='text-[black]'>Everett Street to Moorpark Ave will be closed 7:30AM - 12PM on Oct 3th</li>
-					<li className='text-[black]'>High Street (Hard Closure) will be closed to all traffic from 6 AM - 5 PM on Oct 3th</li>
-					<li className='text-[black]'>Walnut Canyon Road (Spring to Casey) will be open for local resident traffic ONLY from 7AM - 12PM</li>
-					<li className='text-[black]'>Walnut Canyon Road between Casey Road and Poindexter (Hard Closure) will be closed to all traffic from 7AM - 12PM</li>
+			<div className='bg-[#F7B500] p-[1rem]! border-2 border-dashed border-black rounded-[1rem]'>
+				<p className='text-[1.5rem]! mb-[1rem]! mx-auto!'>Important: Road Closures</p>
+				<ul className="list-disc list-outside pl-[1.5rem]! text-left text-black">
+					<li><strong>Wicks Road:</strong> Residents will not be permitted to enter or exit Wicks Road between <strong>7:00 am</strong> and <strong>12:00 pm</strong></li>
+					<li><strong>Casey Road:</strong> Residents will not be permitted to enter or exit Casey Road between <strong>7:00 am</strong> and <strong>12:00 pm</strong></li>
+					<li><strong>Charles Street to Moorpark Ave:</strong> Closed from <strong>7:00 am</strong> to <strong>12:00 pm</strong></li>
+					<li><strong>Everett Street to Moorpark Ave:</strong> Closed from <strong>7:00 am</strong> to <strong>12:00 pm</strong></li>
+					<li><strong>Casey Road to Moorpark Road to Poindexter Avenue:</strong> Closed from <strong>7:00 am</strong> to <strong>12:00 pm</strong></li>
+					<li><strong>Historic High Street:</strong> Closed from <strong>6:00 am</strong> to <strong>5:00 pm</strong></li>
 				</ul>
 			</div>
 

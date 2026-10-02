@@ -1,9 +1,9 @@
 import { FaLink } from "react-icons/fa"
 
-export default function About() {
+export default function Applications() {
 
 	return (
-		<section id="applications-section" className="bg-[white]">
+		<section id="applications-section">
 			<h2>
 				Applications
 			</h2>
@@ -15,20 +15,20 @@ export default function About() {
 			{/* Tabs/Types */}
 			<div className="flex gap-[1rem] flex-wrap justify-center">
 				<a
-					href="https://docs.google.com/forms/d/e/1FAIpQLSdIOIOxlMwPLCmzLuBeHxg6wDZwsWW0M1X8t_oeyq6siEElNg/viewform?usp=header"
-					className="btn gap-[0.5rem]"
-					target="_blank"
-					rel="noopener"
-				>
-					Sponsorship <FaLink />
-				</a>
-				<a
-					href="https://docs.google.com/forms/d/e/1FAIpQLSdiIl-y4uMAwgQhOKN1zLts4CDCCkEz8UOMc2NdmuxWTrYztw/viewform?usp=sf_link"
+					href="https://docs.google.com/spreadsheets/d/14fk1rm_CsVsMUAsnAYduGNXOnpKlXht9Lj-1DCXwtL0/edit?usp=drivesdk&usp=embed_facebook"
 					className="btn gap-[0.5rem]"
 					target="_blank"
 					rel="noopener"
 				>
 					Volunteer <FaLink />
+				</a>
+				{/* <a
+					href="https://docs.google.com/forms/d/e/1FAIpQLSdIOIOxlMwPLCmzLuBeHxg6wDZwsWW0M1X8t_oeyq6siEElNg/viewform?usp=header"
+					className="btn gap-[0.5rem]"
+					target="_blank"
+					rel="noopener"
+				>
+					Sponsorship - Closed <FaLink />
 				</a>
 				<a
 					href="https://docs.google.com/forms/d/e/1FAIpQLScrEHR6KJs6FMqqOLrGD2G4BAem_9WDiLs_sq3yI4FtALv3Hw/viewform?usp=header"
@@ -36,7 +36,7 @@ export default function About() {
 					target="_blank"
 					rel="noopener"
 				>
-					Parade <FaLink />
+					Parade - Closed <FaLink />
 				</a>
 				<a
 					href="https://docs.google.com/forms/d/e/1FAIpQLScecfDELMWOPilib3SIC1pbX7moUeO8Yg8jOD_nAf05qkNCig/viewform?usp=header"
@@ -44,8 +44,8 @@ export default function About() {
 					target="_blank"
 					rel="noopener"
 				>
-					Vendor <FaLink />
-				</a>
+					Vendor - Closed <FaLink />
+				</a> */}
 				<a
 					href="https://square.link/u/kiFnD00b?src=sheet"
 					className="btn gap-[0.5rem]"

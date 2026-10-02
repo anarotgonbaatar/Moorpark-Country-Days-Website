@@ -6,7 +6,6 @@ export default function About() {
 	return (
 		<section
 			id="about-section"
-			className="bg-[var(--gold)]"
 		>
 			<h2>
 				About Moorpark Country Days
